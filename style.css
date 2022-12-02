@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&family=Rubik+Glitch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Roboto:ital,wght@1,900&family=Rubik+Glitch&display=swap');
+
+:root{
+
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad ;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+    --cor6: #3F8EBF;
+    --cor7:#A0DBF2;
+    --cor8:#F2E205;
+    --cor9:#D9B504;
+    --cor10:#8C661F;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-image: linear-gradient(to bottom, rgb(89, 124, 238), rgb(20, 19, 19));
+    min-height: 100px;/*Altura do meu cabeçalho(header)*/
+    text-align: center;
+    padding-top: 40px;/*Configurei a altura do meu título principal da borda.*/
+}
+header > h1{
+    color: rgba(226, 112, 59, 0.801);
+    font-family: 'Libre Baskerville', serif;
+    margin-bottom: 20px;/*Dei um espaço de 20px entre meu h1 e o parágrafo do header.*/
+    text-shadow: 2px 2px 0px black;
+    font-size: 3em;
+    font-weight: bold;
+    padding-top: -15px;
+}
+header > p{
+    font-size: 1.3em;/*Tamanho da fonte do meu titulo*/
+    max-width: 700px;
+    padding-right: 10px;/*Coloquei os dois padding, para mesmo quando o a página alcaçar o tamanho menor o texto continue afastado 10px das duas laterais.*/
+    padding-left: 10px;
+    margin: auto;/*Deixei margem auto para ficar sempre centralizado!*/
+    font-weight: bold;/*Font negrito*/
+    color: white;/*Cor das letras*/
+    margin-bottom: 0.5px;/*Coloquei está margem para quando reduzir no menor nível de tela o menu se separe do título principal.*/
+    padding-bottom: 5px;
+}
+nav{
+    background-image: linear-gradient(to bottom, rgb(89, 124, 238), rgb(20, 19, 19));
+    padding: 10px;
+}
+nav > a{
+    padding: 10px;
+    text-align: right;
+    text-decoration: none;/*Tira o sublinhado das palavras.*/
+    font-weight: bold;/*Coloquei o texto em negrito.*/
+    border-radius: 5px;
+    color: rgb(247, 247, 247);/*Cor da letra*/
+}
+nav a:hover{/*Criei essa pseudo class com o hover, para quando eu passar o mouse por cima da palavra o texto fica colorido e em caixa.*/
+    background-color: #6675f5;
+    color: #adf1c2;/*Cor em que a letra irá se tranforma.*/
+    border-radius: 5px;
+    transition-duration: 0.9s;
+}
+
+main{
+    background-color: white;
+    max-width: 800px;
+    min-width: 250px;
+    /*As configurações acima vai garantir que a caixa em questão não fique com largura menor que 400px (para telas pequenas) e nem seja maior que 800px (para telas muito grandes). Para medidas entre 400px e 800px, o tamanho será adaptável e a caixa vai ocupar 100% da largura do contêiner. Isso vai facilitar bastante a adaptação do conteúdo a diversos tipos de tela.*/
+    margin: auto;
+    margin-bottom: 20px;/*Afastei o meu conteúdo principal da borda debaixo da minha página.*/
+    padding: 20px;/*Usei esse padding para afasta as minhas caixas das bordas em 20px(videos, textos,etc.).*/
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.664);/*Coloquei uma sobra na minha página.*/
+    border-bottom-left-radius: 10px;/*Configura a borda direita de baixo para ficar arredondada*/
+    border-bottom-right-radius: 10px;/*Configura a borda esquerda de baixo para ficar arredondada*/
+    
+}
+main h1{
+    font-family: 'Libre Baskerville', serif;
+
+}
+main h2{
+    font-size: 1.3em;
+}
+main p{
+    font-size: 1em;
+    text-indent: 30px;
+    margin: 15px 0px;/*criei uma margem entre os meus títulos e paragrafos de 15px. */
+    text-align: justify;
+    line-height: 1.50em;
+}
+
+aside{
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor0));
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px black;
+}
+aside > h2{
+    padding: 10px;
+    margin: -10px -10px 0px -10px;/*com esse código eu conseguir com que a minha caixa se encaixe perfeitamente na caixa em que ela está dentro.*/
+}
+aside > ul{
+    list-style-position: inside;/*Coloca tudo da lista dentro do bloco aside.*/
+    columns: 2;/*Dividi todo o meu conteúdo da lista em dois grupos.*/
+    list-style-type: '\2714\00A0';
+}
+
+footer{
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+    color: white;
+    background-image: linear-gradient(to bottom, rgb(89, 124, 238), rgb(20, 19, 19));
+}
+
+body{
+    font-family: var(--cor0);
+    color: black;
+    background-color: white;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+}
+

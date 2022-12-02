@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos Bougainville Farm</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Roboto:ital,wght@1,900&family=Rubik+Glitch&display=swap');
+        body h1{
+            text-align: center;
+            font-family: 'Libre Baskerville', serif;
+            margin-bottom: 2px;
+        }
+        h2{
+            text-align: center;
+            font-family: 'Libre Baskerville', serif;
+            margin-top: 2px;
+        }
+        main{
+            max-width: 800px;
+            min-width: 300px;
+            border-radius: 10px;
+            margin: auto;
+            margin-bottom: 30px;/*Afastei o meu conteúdo principal da borda debaixo da minha página.*/
+            padding: 20px;/*Usei esse padding para afasta as minhas caixas das bordas em 20px(videos, textos,etc.).*/
+            box-shadow: 0px 0px 10px black;/*Coloquei uma sobra na minha página.*/
+            background-image: linear-gradient(to right, rgba(119, 160, 143, 0.829), rgb(105, 198, 221));
+        }
+       
+        div.video{
+            margin: 0px -20px 30px -20px;/*Fiz com que a caixa da div colasse na caixa principal.*/
+            padding: 20px;/*Este padding separa o meu video da caixa div, no caso a caixa que ele está dentro.*/
+            padding-bottom: 57%;/*Faz com que o video não fique com bordas pretas*/
+            position: relative;
+        }
+        div.video > iframe{
+            border-radius: 10px;
+            display: inline-block;
+            position: absolute;/*O position me dá a capacidade de poder mexer com o top, left, widthe e height abaixo.*/
+            top: 5%;
+            left: 5%;
+            width: 90%;
+            height: 90%;
+        }
+        body{
+            
+            background-image: linear-gradient(to bottom, var(--cor1), var(--cor0));
+        }
+    </style>
+</head>
+<body>
+    <h1>Vídeos</h1>
+    <h2>Bougainville Farm</h2>
+    <main>
+        <div class="video"><iframe src="https://www.youtube.com/embed/KfDErk0tNtM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="video"><iframe src="https://www.youtube.com/embed/nBY1YdsZAFc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="video"><iframe src="https://www.youtube.com/embed/FmDH413mzCg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="video"><iframe src="https://www.youtube.com/embed/jGNnQJRbe4I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="video"><iframe src="https://www.youtube.com/embed/W9d5xVXlkNE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="video"><iframe src="https://www.youtube.com/embed/KDV1iE-Xsx8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="video"><iframe src="https://www.youtube.com/embed/DGfE8pYL_4o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="video"><iframe src="https://www.youtube.com/embed/TEyo13cY4M4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    </main>
+</body>
+</html>
