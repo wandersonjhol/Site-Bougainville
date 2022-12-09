@@ -42,7 +42,7 @@ header > h1{
 header > p{
     font-size: 1.3em;/*Tamanho da fonte do meu titulo*/
     max-width: 700px;
-    padding-right: 10px;/*Coloquei os dois padding, para mesmo quando o a página alcaçar o tamanho menor o texto continue afastado 10px das duas laterais.*/
+    padding-right: 10px;/*Coloquei os dois padding, para mesmo quando a página alcaçar o tamanho menor o texto continue afastado 10px das duas laterais.*/
     padding-left: 10px;
     margin: auto;/*Deixei margem auto para ficar sempre centralizado!*/
     font-weight: bold;/*Font negrito*/
